@@ -1,0 +1,271 @@
+/* Helper start*/
+.main-section {
+  /*border: 1px solid orange;*/
+}
+
+.columns {
+  /*border: 1px solid red;  */
+}
+
+.row {
+  /*border: 1px solid blue;*/
+}
+
+.col-content {
+    /*border: 1px solid red;*/
+}
+
+.project {
+  /*border: 1px solid #fff;*/
+}
+
+/* Helper end */
+/* OVERRIDES: */ 
+body {
+  font: 300 16px/22px "Oswald", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  background: #000;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+/* foundation links*/
+
+.breadcrumbs a {
+  color: #A3B7FF;
+  text-decoration: none;
+  line-height: inherit;
+  cursor: pointer; 
+}
+
+
+.breadcrumbs a:hover {
+  color: #fff; 
+  text-decoration: none;
+}
+
+.breadcrumbs a:focus {
+    color: #fff; 
+}
+
+/* OVERRIDES end */
+
+.breadcrumbs {
+  font-size: 18px;
+  padding: 17px 0 0 60px;
+}
+
+.logo {
+  font-size:28px;
+  text-transform: uppercase;  
+  letter-spacing:-1.9px;
+  float: left;
+}
+
+.bg {
+    background-color: #171717;
+}
+
+.btn-logo {
+  background:#fff;
+  color:#030208;
+  border:1px solid #fff;
+  text-decoration: none;  
+  padding: 5px 10px;
+  font-family: "Changa One", cursive;
+  text-decoration: none;
+  line-height: inherit;
+  cursor: pointer; 
+  -o-transition: background-color 1s;
+  -ms-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+.btn-logo:hover {
+  background:#030208;
+  color: #fff; 
+}
+
+.btn-logo:focus {
+  background:#fff;
+  color: #030208; 
+}
+
+.row-gutter {
+  max-width: 100%;
+}
+
+.container-header,
+.container-footer {
+  padding: 5px;
+  height: 50px;
+}
+
+.container-header {
+  /* alt */
+  border-bottom: 1px solid #fff;
+}
+
+.container-footer {
+  /*alt*/
+  border-top: 1px solid #fff;
+}
+
+.main-section>.row {
+  background: -webkit-linear-gradient(to bottom, #000, #27142C);
+  background: -moz-linear-gradient(to bottom, #000, #27142C);
+  background: linear-gradient(to bottom, #000, #27142C);
+}
+
+
+.content-about {
+  text-align: center;
+  min-height: 350px;
+}
+
+.content-work {
+  padding: 0;
+  overflow: hidden;
+}
+
+.lead {
+  padding:20px 0;
+  font-size: 40px;
+}
+
+.lead-alt-text {
+  font-family: 'Allura', cursive;
+}
+
+p.info {
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-size: 16px;
+  margin-top: 22px;
+}
+
+ul.info {
+  font-size: 18px;
+  margin-top: 22px;
+}
+
+@media screen and (min-width: 40em) {
+  .border-l {
+    border-left: 1px solid #fff;    
+  }
+
+  .border-r {
+    border-right: 1px solid #fff;    
+  }
+}
+
+@media screen and (max-width: 64em) {
+  .border-l { 
+    border-left: none;
+    border-top: 1px solid #fff;
+  }
+
+  .border-r {
+    border-right: none;    
+    border-bottom: 1px solid #fff;
+  }
+}
+
+
+
+.viewport img {
+  /*opacity: 0.5;*/
+}
+
+@media screen and (min-width: 40em) {
+   .mouseOverBg {
+      min-width: 25%;
+   }   
+}
+
+@media screen and (max-width: 64em) {
+  .mouseOverBg {
+      min-width: 40%;
+   }
+}
+    
+.mouseOverBg {  
+  overflow: hidden;
+  position: absolute;
+  margin-top: 35px;
+  padding: 5px 0 5px 30px;
+  opacity: 0;
+  border-bottom: 5px solid #fff;
+  border-left: 10px solid #fff;
+  border-top: 10px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.mouseOverTxt {
+  font-size: 22px; 
+  color: #fff;
+  margin-left: -150px;
+}
+
+.noHoverBg {
+  position: absolute;
+  padding: 15px 25px 5px 30px;
+  background: rgba(0,0,0,0.5);
+}
+
+.noHoverText {
+  font-size: 40px; 
+  color: #fff;
+}
+.projectWrapper {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.noHoverBg-project {
+}
+
+.noHoverTxt-project {
+  position: absolute;
+  margin-top: 30px;
+  padding:0 7px 0 15px;
+  background-color: #000;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 64em) {
+  .columns-centered {
+    text-align: center;
+  }
+}
+
+.devInfo ul{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.text-sm {
+  font-size: 15px
+}
+
+.devInfo ul:first-child {
+  text-align: right;
+  border-right:1px solid;
+  padding: 0 20px 0 0;
+  margin-left: -62px;
+}
+
+.devInfo ul:last-child{
+  text-align: left;
+  padding: 0 0 0 20px;
+}
