@@ -1,5 +1,4 @@
 'use strict';
-
 (function() {
 	//cache DOM start
 	const $workViewport = $('#contentViewport').find('#workViewport');
@@ -40,6 +39,7 @@
 	let animIntervalmouseOverBg = 300;
 	let animIntervalmouseOverTxt = 300;
 	let animIntervalNoHover = 50;
+	let animIntervalAlt = 450;
 	let targetOpacity = 0.1;
 
 	function showAnim(obj) {
@@ -54,7 +54,7 @@
 		obj.img.stop().animate({opacity:1}, animIntervalImg, () => {
 			obj.mouseOverBg.stop().animate({opacity:0}, { duration: animIntervalmouseOverBg });
 			obj.mouseOverTxt.stop().animate({'margin-left':'-150'}, animIntervalmouseOverTxt);
-			obj.noHoverBg.stop().animate({opacity:1}, 800);
+			obj.noHoverBg.stop().animate({opacity:1}, animIntervalAlt);
 		});	
 
 	}

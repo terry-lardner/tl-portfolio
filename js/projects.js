@@ -13,56 +13,12 @@
 	
 
 	//cache DOM end
-
+	
 	$project1Li.on('mouseover', () => {
-		$('#defaultInfo').finish();
-		$('#project2Info').finish();
 
-		$noHoverTxt1.css({'background-color':'#1A033B'});
-
-		$('#defaultInfo').animate({'opacity':0}, 200, () => {
-			$('#defaultInfo').hide();
-			$('#project1Info').removeClass('hide');
-			$('#project1Info').animate({'opacity':1});
-		});		
-	});
-
-	$project1Li.on('mouseleave', () => {
-		$('#defaultInfo').finish();
-		$('#project2Info').finish();
-
-		$noHoverTxt1.css({'background-color':'#000'});
-
-		$('#project1Info').animate({'opacity':0}, 200, () => {
-			$('#project1Info').addClass('hide');
-			$('#defaultInfo').show();
-			$('#defaultInfo').animate({'opacity':1}, 200);
-		});
 	});
 
 	$project2Li.on('mouseover', () => {
-		$('#defaultInfo').finish();
-		$('#project1Info').finish();
 
-		$noHoverTxt2.css({'background-color':'#1A033B'});
-
-
-		$('#defaultInfo').animate({'opacity':0}, 200, () => {
-			$('#defaultInfo').hide();
-			$('#project2Info').removeClass('hide');
-			$('#project2Info').animate({'opacity':1});
-		});		
-	});
-
-	$project2Li.on('mouseleave', () => {
-		$('#defaultInfo').finish();
-		$('#project1Info').finish();
-
-		$noHoverTxt2.css({'background-color':'#000'});
-		$('#project2Info').animate({'opacity':0}, 200, () => {
-			$('#project2Info').addClass('hide');
-			$('#defaultInfo').show();
-			$('#defaultInfo').animate({'opacity':1}, 200);
-		});
 	});
 }());

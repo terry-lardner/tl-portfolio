@@ -19,7 +19,17 @@
   /*border: 1px solid #fff;*/
 }
 
+.content-work {
+  /*border: 1px solid blue;*/
+}
+
+.projectWrapper {
+  /*border: 1px solid orange;*/
+}
+
+
 /* Helper end */
+
 /* OVERRIDES: */ 
 body {
   font: 300 16px/22px "Oswald", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -35,7 +45,12 @@ h1 {
 ul, li {
   list-style: none;
 }
-/* foundation links*/
+
+/* OVERRIDES end */
+.breadcrumbs {
+  font-size: 18px;
+  padding: 18px 0 0 60px;
+}
 
 .breadcrumbs a {
   color: #A3B7FF;
@@ -54,50 +69,40 @@ ul, li {
     color: #fff; 
 }
 
-/* OVERRIDES end */
-
-.breadcrumbs {
-  font-size: 18px;
-  padding: 17px 0 0 60px;
-}
-
-.logo {
-  font-size:28px;
-  text-transform: uppercase;  
-  letter-spacing:-1.9px;
-  float: left;
-}
-
 .bg {
     background-color: #171717;
 }
-
-.btn-logo {
-  background:#fff;
-  color:#030208;
-  border:1px solid #fff;
-  text-decoration: none;  
-  padding: 5px 10px;
-  font-family: "Changa One", cursive;
-  text-decoration: none;
-  line-height: inherit;
-  cursor: pointer; 
-  -o-transition: background-color 1s;
-  -ms-transition: background-color 1s;
-  -moz-transition: background-color 1s;
-  -webkit-transition: background-color 1s;
-  transition: background-color 1s;
+/* Logo */
+.btn-logo-v2 {
+  font-family: "Changa One";
+  background: #fff;
+  color: #030208;
+  border: 1px solid #fff;
+  font-size:28px;
+  line-height: 1;
+  text-transform: uppercase;  
+  letter-spacing:-1.9px;
+  padding: 6px 10px;
+  margin: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
 }
 
-.btn-logo:hover {
+.btn-logo-v2:hover {
   background:#030208;
   color: #fff; 
 }
 
-.btn-logo:focus {
+.btn-logo-v2:focus {
   background:#fff;
   color: #030208; 
 }
+
+.logo-pos {
+  float: left;
+}
+/* Logo end */
 
 .row-gutter {
   max-width: 100%;
@@ -106,12 +111,15 @@ ul, li {
 .container-header,
 .container-footer {
   padding: 5px;
-  height: 50px;
+  height: 53px;
 }
 
 .container-header {
   /* alt */
   border-bottom: 1px solid #fff;
+  background: -webkit-linear-gradient(to bottom, #27142C, #000);
+  background: -moz-linear-gradient(to bottom, #27142C, #000);
+  background: linear-gradient(to bottom, #27142C, #000);
 }
 
 .container-footer {
@@ -134,6 +142,8 @@ ul, li {
 .content-work {
   padding: 0;
   overflow: hidden;
+  text-align: center;
+  border-top: 1px solid #fff;
 }
 
 .lead {
@@ -179,8 +189,6 @@ ul.info {
   }
 }
 
-
-
 .viewport img {
   /*opacity: 0.5;*/
 }
@@ -225,20 +233,8 @@ ul.info {
   font-size: 40px; 
   color: #fff;
 }
-.projectWrapper {
-  padding: 0;
-  margin: 0;
-  display: inline-block;
-  vertical-align: top;
-}
 
-.noHoverBg-project {
-}
-
-.noHoverTxt-project {
-  position: absolute;
-  margin-top: 30px;
-  padding:0 7px 0 15px;
+.project-title {
   background-color: #000;
   font-size: 20px;
 }
@@ -254,13 +250,34 @@ ul.info {
   vertical-align: top;
 }
 
+.projectWrapper {
+  padding: 30px 0;
+  margin: 0;
+}
+
+.projectWrapper li {
+  display: inline-block;
+}
+
+.projectWrapper img {
+  width: 350px;
+}
+
+.projectWrapper a {
+  opacity: 0.6;
+}
+
+.projectWrapper a:hover {
+  opacity: 1;
+}
+
 .text-sm {
   font-size: 15px
 }
 
 .devInfo ul:first-child {
   text-align: right;
-  border-right:1px solid;
+  border-right:1px solid #fff;
   padding: 0 20px 0 0;
   margin-left: -62px;
 }
@@ -268,4 +285,37 @@ ul.info {
 .devInfo ul:last-child{
   text-align: left;
   padding: 0 0 0 20px;
+}
+
+.reveal {
+  background-color: #000;
+  border: 1px solid #fff;
+  outline: 0;
+}
+
+.modal-description {
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.close-button {
+  background-color: #000;
+  line-height: 0;
+  color: #fff;
+  padding: 25px 25px 25px 8px;
+  margin: -16px 0 0 0;
+  right: 0;
+  top: 0;
+  outline: 0;
+  font-size: 60px;
+  width: 30px;
+  height: 30px;
+}
+
+.close-button:hover {
+  color:#fff;
+}
+
+.close-button:focus {
+  color:#fff;
 }
