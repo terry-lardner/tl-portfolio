@@ -1,8 +1,35 @@
-/* OVERRIDES: */
-html, body{
-  height:100%;
+/* Helper start*/
+.main-section {
+  /*border: 1px solid orange;*/
 }
 
+.columns {
+  /*border: 1px solid red;  */
+}
+
+.row {
+  /*border: 1px solid blue;*/
+}
+
+.col-content {
+    /*border: 1px solid red;*/
+}
+
+.project {
+  /*border: 1px solid #fff;*/
+}
+
+.content-work {
+  /*border: 1px solid blue;*/
+}
+
+.projectWrapper {
+  /*border: 1px solid orange;*/
+}
+
+/* Helper end */
+
+/* OVERRIDES: */ 
 body {
   font: 300 16px/22px "Oswald", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
@@ -34,66 +61,6 @@ ul, li {
 
 /* foundation end*/
 /* OVERRIDES end */
-.section-title {
-  font-size: 30px;
-}
-
-.section-about {
-  margin-top: 53px;
-  padding-top: 10%;
-  height: 100%;
-  color: #F2F2F2;
-  min-height: 950px;
-  text-align: center;
-  background: -webkit-linear-gradient(to bottom, #000, #190D1C);
-  background: -moz-linear-gradient(to bottom, #000, #190D1C);
-  background: linear-gradient(to bottom, #000, #190D1C);
-}
-
-.section-skills {
-  padding-top: 10%;
-  height: 100%;
-  text-align: center;
-  border-top: 1px solid #fff;
-  color: #616161;
-  min-height: 850px;
-  background: -webkit-linear-gradient(to bottom, #E0E0E0, #fff);
-  background: -moz-linear-gradient(to bottom, #E0E0E0, #fff);
-  background: linear-gradient(to bottom, #E0E0E0, #fff);
-}
-
-.section-projects {
-  padding-top: 10%;
-  height: 100%;
-  text-align: center;
-  border-top: 1px solid #fff;
-  color: #616161;
-  min-height: 1150px;
-  background: -webkit-linear-gradient(to bottom, #E0E0E0, #fff);
-  background: -moz-linear-gradient(to bottom, #E0E0E0, #fff);
-  background: linear-gradient(to bottom, #E0E0E0, #fff);
-}
-
-.section-cv {
-  padding-top: 10%;
-  height: 100%;
-  text-align: center;
-  border-top: 1px solid #fff;
-  color: #fff;
-  min-height: 1300px;
-  background-color: #171717;
-}
-
-.section-work {
-  height: 100%;
-  text-align: center;
-  border-top: 1px solid #fff;
-}
-
-.highlight {
-  color: red;
-}
-
 .breadcrumbs {
   font-size: 18px;
   margin: 0;
@@ -115,6 +82,9 @@ ul, li {
     color: #fff; 
 }
 
+.bg {
+    background-color: #121212;
+}
 /* Logo */
 .logo-pos {
   float: left;
@@ -158,6 +128,7 @@ ul, li {
   padding:10px;
 }
 
+
 .social-menu-pos {
   float: right;
   width: 90px;
@@ -178,7 +149,7 @@ ul, li {
 }
 
 .social {
-  float: right;
+  text-align: center;
 }
 
 .social img {
@@ -232,10 +203,6 @@ ul, li {
 }
 
 .container-header {
-  position: fixed;
-  width: 100%;
-  margin-top: -53px;
-  z-index: 60;
   border-bottom: 1px solid #fff;
   background: -webkit-linear-gradient(to bottom, #190D1C, #000);
   background: -moz-linear-gradient(to bottom, #190D1C, #000);
@@ -246,7 +213,20 @@ ul, li {
   border-top: 1px solid #fff;
 }
 
+.content-about {
+  text-align: center;
+  min-height: 350px;
+  background: -webkit-linear-gradient(to bottom, #000, #190D1C);
+  background: -moz-linear-gradient(to bottom, #000, #190D1C);
+  background: linear-gradient(to bottom, #000, #190D1C);
+}
 
+.content-work {
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  border-top: 1px solid #fff;
+}
 
 .lead {
   padding:20px 0;
@@ -257,107 +237,136 @@ ul, li {
   font-family: 'Allura', cursive;
 }
 
-p.intro,
-p.aboutme {
+p.info {
   letter-spacing: 1px;
   line-height: 30px;
-  font-size: 19px;
+  font-size: 16px;
   margin-top: 22px;
 }
 
-p.intro {
-  font-style: italic;
-  background-color: #000;
-  font-size: 16px;
-  color: #F2F2F2;
-
+ul.info {
+  font-size: 18px;
+  margin-top: 22px;
 }
 
-p.aboutme {
-  margin-top: 40px;
+@media screen and (min-width: 40em) {
+  .border-l {
+    border-left: 1px solid #fff;    
+  }
+
+  .border-r {
+    border-right: 1px solid #fff;    
+  }
 }
 
-p.aboutme i {
-  font-size: 10px;
+@media screen and (max-width: 64em) {
+  .border-l { 
+    border-left: none;
+    border-top: 1px solid #fff;
+  }
+
+  .border-r {
+    border-right: none;    
+    border-bottom: 1px solid #fff;
+  }
 }
 
-.skills {
-  padding-top: 30px;
-  font-size: 20px;
+@media screen and (min-width: 40em) {
+   .mouseOverBg {
+      min-width: 15%;
+   }   
 }
 
-.skills>.title,
-.section-list>.title {
-  font-weight: bold;
-  padding-top: 30px;
+@media screen and (max-width: 64em) {
+  .mouseOverBg {
+      min-width: 40%;
+   }
+}
+    
+.mouseOverBg {  
+  overflow: hidden;
+  position: absolute;
+  margin-top: 35px;
+  padding: 5px 0 5px 30px;
+  opacity: 0;
+  border-bottom: 5px solid #fff;
+  border-left: 10px solid #fff;
+  border-top: 10px solid transparent;
+  border-right: 5px solid transparent;
 }
 
-.section-list>.subtitle {
-  margin-top: 10px;
+.mouseOverTxt {
+  font-size: 22px; 
   color: #fff;
+  margin-left: -150px;
 }
 
-.section-list>.subtitle {
-  color: #D66D28;
+.noHoverBg {
+  position: absolute;
+  padding: 15px 25px 5px 30px;
+  background: rgba(0,0,0,0.5);
 }
 
-.skills>li i {
-  font-size: 7px;
-  padding: 0 10px;
-}
-
-.section-skills>.info {
-  padding-top: 20px;
-  font-size: 20px;
-}
-
-.section-projects>.section-list li {
-  display: inline-block;
-}
-
-.section-projects>.section-list a {
-  opacity: 0.6;
-}
-
-[data-whatinput="touch"] .section-projects>.section-list a {
-  opacity: 1;
-}
-
-.section-projects>.section-list a:hover {
-  opacity: 1;
-}
-
-.workexp li:not(.title){
-  padding-top: 15px;
-}
-
-.edu li:not(.title){
-  padding-top: 15px;
-}
-
-.workexp li,
-.edu li {
-  font-size: 19px;
+.noHoverText {
+  font-size: 40px; 
+  color: #fff;
 }
 
 .project-title {
   background-color: #000;
   font-size: 20px;
-  color: #fff;
-}
-
-@media screen and (min-width: 40em) {
-  .project {
-    margin-left: 30px;
-    margin-top: 30px;
-  }
 }
 
 @media screen and (max-width: 64em) {
-  .project {
-    margin-top: 30px;
-    width: 300px;
+  .columns-centered {
+    text-align: center;
   }
+}
+
+.devInfo ul{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.projectWrapper {
+  padding: 30px 0;
+  margin: 0;
+}
+
+.projectWrapper li {
+  display: inline-block;
+}
+
+.projectWrapper img {
+  width: 350px;
+}
+
+.projectWrapper a {
+  opacity: 0.6;
+}
+
+[data-whatinput="touch"] .projectWrapper a {
+  opacity: 1;
+}
+
+.projectWrapper a:hover {
+  opacity: 1;
+}
+
+.text-sm {
+  font-size: 15px
+}
+
+.devInfo ul:first-child {
+  text-align: right;
+  border-right:1px solid #fff;
+  padding: 0 20px 0 0;
+  margin-left: -62px;
+}
+
+.devInfo ul:last-child{
+  text-align: left;
+  padding: 0 0 0 20px;
 }
 
 .reveal {
@@ -391,17 +400,4 @@ p.aboutme i {
 
 .close-button:focus {
   color:#fff;
-}
-
-/**/
-@media screen and (min-width: 40em) {
-   .mouseOverBg {
-      min-width: 15%;
-   }   
-}
-
-@media screen and (max-width: 64em) {
-  .mouseOverBg {
-      min-width: 40%;
-   }
 }
